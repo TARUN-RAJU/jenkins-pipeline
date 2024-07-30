@@ -8,6 +8,12 @@ pipeline{
              steps{
                   sh 'mvn --version'       
              }
+             steps{
+              javac hello.java
+             }
+             steps{
+              java hello.java
+             }
        }
 
        
